@@ -4,47 +4,84 @@
 <meta charset="UTF-8">
 <title>Farhan Fitness Club</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
 <style>
 body {
-margin: 0;
+margin:0;
 font-family: Arial, sans-serif;
-background: #0f172a;
-color: white;
-text-align: center;
+background:#0f172a;
+color:white;
 }
 
 header {
-background: black;
-padding: 30px;
+background:black;
+padding:20px;
+text-align:center;
+}
+
+.logo {
+width:90px;
+margin-bottom:10px;
 }
 
 h1 {
-font-size: 40px;
-color: #22c55e;
-margin: 0;
+color:#22c55e;
+font-size:38px;
+margin:0;
 }
 
 .tagline {
-margin-top: 10px;
-font-size: 18px;
-color: #facc15;
+color:#facc15;
+margin-top:8px;
+}
+
+.btn {
+display:inline-block;
+margin:10px;
+padding:10px 18px;
+background:#22c55e;
+color:black;
+text-decoration:none;
+border-radius:6px;
+font-weight:bold;
 }
 
 .section {
-padding: 30px;
+padding:20px;
 }
 
 .card {
-background: #1e293b;
-padding: 20px;
-border-radius: 10px;
-margin: 15px;
+background:#1e293b;
+padding:20px;
+border-radius:12px;
+margin:15px 0;
+}
+
+.icon {
+color:#22c55e;
+font-size:20px;
+margin-right:8px;
+}
+
+.gallery img {
+width:100%;
+border-radius:10px;
+margin-top:10px;
+}
+
+iframe {
+width:100%;
+border-radius:10px;
+margin-top:10px;
 }
 
 footer {
-background: black;
-padding: 15px;
-font-size: 14px;
+background:black;
+text-align:center;
+padding:12px;
+font-size:14px;
 }
 </style>
 </head>
@@ -52,38 +89,62 @@ font-size: 14px;
 <body>
 
 <header>
+
+<img src="IMG_20260121_111000-removebg-preview.png" class="logo">
+
 <h1>FARHAN FITNESS CLUB</h1>
+
 <p class="tagline">Strong Body • Strong Mind • Strong Life</p>
+
+<a href="#contact" class="btn">Join Now</a>
+<a href="tel:9891307612" class="btn">Call Us</a>
+
 </header>
 
 <div class="section">
 
 <div class="card">
-<h2>About Our Gym</h2>
+<h2><i class="fa-solid fa-dumbbell icon"></i> About Our Gym</h2>
 <p>
 Farhan Fitness Club is the best gym in Bhinga Shravasti area.
-We focus on strength training, fat loss, muscle building and overall fitness.
-Our goal is to make every member healthy, confident and powerful.
-Join us today and start your fitness journey.
+We focus on fat loss, muscle building, strength training and body transformation.
+Our mission is to make youth strong, confident and disciplined.
 </p>
 </div>
 
 <div class="card">
-<h2>Location</h2>
+<h2><i class="fa-solid fa-location-dot icon"></i> Location</h2>
+
 <p>
-Khargaura Road  
+Sky Dress, Khargaura Road  
 Semari Chauraha  
 Bhinga, Shravasti  
 PIN: 271831
 </p>
+
+<iframe 
+src="https://maps.google.com/maps?q=Semari%20Chauraha%20Bhinga&t=&z=14&ie=UTF8&iwloc=&output=embed">
+</iframe>
+
 </div>
 
-<div class="card">
-<h2>Contact Us</h2>
+<div class="card" id="contact">
+<h2><i class="fa-solid fa-phone icon"></i> Contact Us</h2>
+
 <p>
-📞 Phone: 9891307612 <br>
-📧 Email: abudardakhan111@gmail.com
+📞 9891307612 <br><br>
+📧 abudardakhan111@gmail.com
 </p>
+
+</div>
+
+<div class="card gallery">
+<h2><i class="fa-solid fa-image icon"></i> Gym Gallery</h2>
+
+<img src="https://images.unsplash.com/photo-1599058917212-d750089bc07b">
+
+<img src="https://images.unsplash.com/photo-1579758629938-03607ccdbaba">
+
 </div>
 
 </div>
@@ -93,4 +154,4 @@ PIN: 271831
 </footer>
 
 </body>
-</html>
+      </html>
